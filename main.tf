@@ -37,6 +37,7 @@ module "terraform_server_vm" {
   service_account_email   = module.project_resources.terraform_service_account_email_output
   vm_image                = var.vm_image
   allow_ssh_cidr_ranges   = var.allow_ssh_cidr_ranges
+  startup_script          = var.startup_script
 
   depends_on = [module.project_resources] // Ensures SA and APIs are ready
 }

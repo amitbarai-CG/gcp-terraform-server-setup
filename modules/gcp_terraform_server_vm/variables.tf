@@ -55,10 +55,10 @@ sudo apt-get install -y wget gnupg software-properties-common curl apt-transport
 # Install Terraform
 echo "Installing Terraform..."
 TERRAFORM_VERSION="1.6.5" # Specify desired Terraform version
-wget "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip"
-unzip "terraform_${TERRAFORM_VERSION}_linux_amd64.zip"
+wget "https://releases.hashicorp.com/terraform/$${TERRAFORM_VERSION}/terraform_$${TERRAFORM_VERSION}_linux_amd64.zip"
+unzip "terraform_$${TERRAFORM_VERSION}_linux_amd64.zip"
 sudo mv terraform /usr/local/bin/
-rm "terraform_${TERRAFORM_VERSION}_linux_amd64.zip"
+rm "terraform_$${TERRAFORM_VERSION}_linux_amd64.zip"
 terraform --version
 
 # Install Google Cloud CLI (if not already present, though most GCP images have it)
