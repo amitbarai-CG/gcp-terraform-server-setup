@@ -62,3 +62,10 @@ variable "allow_ssh_cidr_ranges" {
   description = "List of CIDR ranges to allow SSH access to the VM. For unrestricted access (not recommended for production), use [\"0.0.0.0/0\"]."
   default     = ["0.0.0.0/0"] // WARNING: Allows SSH from anywhere. Restrict this in production.
 }
+
+variable "startup_script" {
+  type        = string
+  description = "Startup script to run on the VM instance for installing software. If not provided, the module's default script will be used."
+  default     = null // Setting to null means if not explicitly set in root, module's default is used.
+                     // Alternatively, you could copy the module's default here.
+}
