@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*.backup
+crash.log
+crash.*.log
+*.tfvars.example # If you have example tfvars, but not the actual ones with secrets
+
+# Local OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor specific
+.vscode/
+.idea/
