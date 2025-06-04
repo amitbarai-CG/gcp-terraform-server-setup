@@ -1,6 +1,6 @@
 // terraform.tfvars - Populate with your actual values
 
-existing_project_id = "my-first-project-12345" // REQUIRED: Replace with the Project ID of "My First Project"
+existing_project_id = "my-first-project-461911" // REQUIRED: Replace with the Project ID of "My First Project"
 
 // Optional: Defaults are provided in variables.tf, uncomment to override
 // gcp_region         = "us-central1"
