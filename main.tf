@@ -5,11 +5,11 @@ terraform {
       version = "~> 5.0"
     }
   }
-  // STEP 3: Uncomment and update this block after initial apply
-  // backend "gcs" {
-  //   bucket = "YOUR_TF_STATE_BUCKET_NAME_HERE" // Will be outputted by project_resources module
-  //   prefix = "terraform/state/project-server"
-  // }
+  // will update bucket name after initial apply "terraform init -migrate-state"
+   backend "gcs" {
+     bucket = "my-first-project-461911-tfstate" // Will be outputted by project_resources module
+     prefix = "terraform/state/project-server"
+   }
 }
 
 provider "google" {
